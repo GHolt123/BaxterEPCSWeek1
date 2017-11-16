@@ -1,3 +1,45 @@
+body{
+  margin: 0;
+}
+body{
+  background-color: #D3D3D3;
+}
+
+.Propellersimg{
+  height: 600px;
+  width: 800px;
+  margin-left: 450px;
+  margin-top: -400px;
+}
+.button{
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: blue;
+  padding: 20px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 60px;
+}
+
+.button2{
+  width: 300px;
+  border: 25px solid blue;
+  padding: 25px;
+  margin: 25px;
+  margin-top: -20px;
+}
+
+.size{
+  margin-top:20px;
+  margin-left: 30px;
+  color: #fffff;
+}
+.boxacrossthetop{
+  height: 80px;
+  background-color: #000000;
+}
+
 .menu{
   display: flex;
 }
@@ -15,22 +57,151 @@
 .cost{
   flex: 1;
 }
-.ingredients{
-  display: flex;
-  margin: 4px;
-  padding: 0px;
-  border: 2px solid green;
-  box-shadow: 1px 1px 2px #dddddd;
+.style{
+  display: flow;
+  margin: 100px;
+  padding: 10px;
+  border: 2px solid Gray;
+  box-shadow: 10px 10px 20px #dddddd;
   flex-direction:column;
 }
-.ingredients:before{
-  content: "Ingredients";
-  font-weight: bold;
-  background: #00AA00;
-  color: #DDFFDD;
+.style:before{
+  font-weight: bolder;
+  background: #008080;
+  color: #000000;
 }
 
-.ingredient, .ingredients:before{
+.style, .style:before{
   flex: 1;
   padding: 0.5em;
+}
+.TypeofFood, .TypeofFood::after{
+  flex: 2;
+  padding: 0.5em;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 10px 18px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown .menu {
+  font-size: 60px;
+}
+
+.dropbtn {
+  font-size: 20px;
+  border-left-width: thick;
+
+}
+.FrameSize{
+  font-size: 40px
+}
+
+.Parts{
+  display: flow;
+  margin: 100px;
+  margin-left: 10px;
+  padding: 10px;
+  box-shadow: 0px 10px 18px 0px rgba(0,0,0,0.2);
+  background-color: white;
+}
+
+.Prop{
+  display: flow;
+  margin: 160px;
+  margin-left: 0px;
+  padding: 10px;
+  box-shadow: 0px 10px 18px 0px rgba(0,0,0,0.2);
+  background-color: white;
+  font-size: 40px;
+}
+
+
+
+/* Images */
+.imgmotor{
+  margin-top: -20px;
+  margin-left: 10px;
+  height: 500px;
+  width: 500px;
+}
+
+/*Images2*/
+.imgframes{
+  margin-top: -20px;
+  margin-left: 10px;
+}
+/* Dropdown */
+.dropbtn {
+    background-color: #000000;
+    color: white;
+    padding: 20px;
+    font-size: 30px;
+    border: none;
+    cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    margin-left:-10px;
+    margin-top: 0px;
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #d3d3d3;
+    min-width: 180px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 10px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #000000;
+}
+/*search bar*/
+input[type=text] {
+    width: 130px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+/* When the input field gets focus, change its width to 100% */
+input[type=text]:focus {
+    width: 100%;
 }
